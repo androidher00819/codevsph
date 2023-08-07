@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem   rgba(0, 0, 0,  0.5);
+}
+
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  15px 200px;
+  transition: 0.5s ease;
+  background:  #1e9ced;
+}
+
+header .brand {
+  color: #1d1d1f;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .navigation {
+  position: relative;
+}
+
+header .navigation .navigation-items a {
+  position: relative;
+  color: #f5f5f7;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+  border-bottom: 0.25em solid transparent;
+}
+
+
+header .navigation .navigation-items a:hover,
+header .navigation .navigation-items a:focus {
+  border-bottom-color: #1d1d1f;
+  color: #1d1d1f;
+}
+header .navigation .navigation-items a.active{
+  color: #1d1d1f;
+  border-bottom-color: #1d1d1f;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: grey;
+}
+.home .content {
+  z-index: 888;
+  color: #f5f5f7;
+  width: 70%;
+  margin-top: 50px;
+}
+
+.home .content h1 {
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 40px;
+}
+
+.home .content p {
+  margin-bottom: 65px;
+}
+
+.home .media-icons {
+  z-index: 888;
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+
+/* section 2 */
+.box-container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin: 50px;
+}
+
+.box {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  margin: 4px;
+  background-color: #212529;
+  border-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 80% 20% 1fr;
+  gap: 10px;
+}
+.one {
+  color: #1e9ced;
+  margin: 10px;
+}
+.one p {
+  color: #1d1d1f;
+  
+}
+.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-footer {
+  text-align: center;
+  height: 50px;
+}
